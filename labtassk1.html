@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Admission Form</title>
+</head>
+<body>
+
+    <h1>University Admission Form</h1>
+
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" maxlength="50" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" name="interests" value="Sports"> Sports<br>
+            <input type="checkbox" name="interests" value="Music"> Music<br>
+            <input type="checkbox" name="interests" value="Programming"> Programming<br>
+            <input type="checkbox" name="interests" value="Art"> Art<br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ssc">SSC GPA:</label><br>
+            <input type="text" id="ssc" name="ssc" maxlength="4" required><br><br>
+
+            <label for="hsc">HSC GPA:</label><br>
+            <input type="text" id="hsc" name="hsc" maxlength="4" required><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="cse">Computer Science & Engineering</option>
+                <option value="eee">Electrical & Electronic Engineering</option>
+                <option value="bba">Business Administration</option>
+                <option value="english">English</option>
+            </select>
+            <br><br>
+
+            <label for="documents">Upload Transcript/Resume:</label><br>
+            <input type="file" id="documents" name="documents" required><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
